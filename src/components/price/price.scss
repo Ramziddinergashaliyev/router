@@ -1,0 +1,38 @@
+.price {
+  padding-top: 120px;
+  &__card__img {
+    width: 100%;
+    img {
+      width: 100%;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__card__text {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19.36px;
+    text-align: left;
+    display: -webkit-box;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+  }
+
+  &__card__title {
+    padding: 20px 0px;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-align: left;
+  }
+
+  @media (max-width: 400px) {
+    &__card__title {
+      font-size: 24px;
+    }
+  }
+}

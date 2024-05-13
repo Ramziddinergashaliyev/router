@@ -1,0 +1,58 @@
+.product {
+  &__title {
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.73px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    padding: 100px 0px 20px;
+  }
+
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    align-items: center;
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__info__title {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    letter-spacing: 0.05em;
+    text-align: left;
+  }
+
+  &__info__desc {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 19.36px;
+    text-align: left;
+    padding: 5px 0px;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+
+  @media (max-width: 880px) {
+    &__card {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20px;
+    }
+  }
+}
